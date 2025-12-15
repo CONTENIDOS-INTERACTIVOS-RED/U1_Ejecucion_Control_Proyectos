@@ -200,7 +200,7 @@
     p.mb-5 La identificación de riesgos consiste en reconocer y documentar eventos que podrían afectar la ejecución del proyecto. Para que esta actividad sea efectiva:
 
     .bg-full-width.bg-color-9.mb-5
-      .px-4.px-md-5
+      .p-4.py-lg-0.px-lg-5
         .row.justify-content-center.align-items-center
           .col-lg-12
             .row.justify-content-center.align-items-center
@@ -342,7 +342,7 @@
     p.mb-5 El producto final de este procedimiento se refleja en el registro de riesgos, un documento clave que:
 
     .bg-full-width.bg-color-11
-      .px-4.px-md-5
+      .p-4.py-lg-0.px-lg-5
         .row.justify-content-center.align-items-center
           .col-lg-12
             .row.justify-content-center.align-items-center

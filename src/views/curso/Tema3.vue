@@ -291,11 +291,11 @@
     p.mb-5 Un caso representativo sería el de una empresa del sector financiero que decide implementar un nuevo sistema ERP (Enterprise Resource Planning). Esta decisión no solo involucra un cambio tecnológico, sino también una redefinición de procesos, estructuras y responsabilidades internas. Para gestionar esta transformación, la organización podría:
 
     .bg-full-width.bg-color-1
-      .px-4.px-md-5
+      .p-4.py-lg-0.px-lg-5
         .row.justify-content-center.align-items-center
           .col-lg-12
             .row.justify-content-center.align-items-center
-              .col-lg-8(data-aos="fade-left")
+              .col-lg-8(data-aos="fade-left").mb-3.mb-lg-0
                 ul.lista-ul--color
                   li.mb-0.d-flex
                     i.far.fa-arrow-alt-circle-right
@@ -307,7 +307,7 @@
                     i.far.fa-arrow-alt-circle-right
                     p.mb-0 Incorporar un estilo de liderazgo transformacional, en el que el líder del proyecto involucra activamente a los equipos, fomenta la formación continua y promueve una visión compartida del éxito.
                 p.mb-0 Este tipo de integración demuestra cómo la gestión de proyectos, el liderazgo y la gestión del cambio pueden actuar de manera complementaria y estratégica, potenciando el impacto de la transformación organizacional.
-              .col-lg-4(data-aos="zoom-in").mb-3.mb-lg-0
+              .col-lg-4(data-aos="zoom-in")
                 img.img-fluid(src='@/assets/curso/tema3/25.svg', style="max-width:486px", alt="" ).mx-auto.mx-lg-0.ms-lg-auto.mb-4.mb-lg-0
     
     .bg-full-width.border-top.color-secundario
