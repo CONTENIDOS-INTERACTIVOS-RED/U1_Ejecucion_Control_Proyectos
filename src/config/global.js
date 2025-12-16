@@ -90,49 +90,6 @@ export default {
         ],
       },
       {
-        nombreRuta: 'tema4',
-        icono: 'far fa-file-alt',
-        numero: '4',
-        titulo:
-          'Identificación, análisis y respuesta a riesgos en la ejecución de proyectos',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '4.1',
-            titulo: 'Planificación de la gestión de riesgos',
-            hash: 't_4_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '4.2',
-            titulo: 'Identificación del riesgo',
-            hash: 't_4_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '4.3',
-            titulo: 'Resultados de la identificación de riesgos',
-            hash: 't_4_3',
-          },
-        ],
-      },
-      {
-        nombreRuta: 'tema5',
-        icono: 'far fa-file-alt',
-        numero: '5',
-        titulo: 'Estrategias de mitigación y gestión de contingencias',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '5.1',
-            titulo: 'Estrategias de mitigación ',
-            hash: 't_5_1',
-          },
-        ],
-      },
-      {
         nombreRuta: 'sintesis',
         titulo: 'Síntesis',
         desarrolloContenidos: true,

@@ -330,6 +330,12 @@
                   img(src='@/assets/curso/tema3/26.png', alt='')
 
 
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
+
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
         h2(data-aos="fade-left") MATERIAL COMPLEMENTARIO
@@ -360,8 +366,199 @@
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema3',
+  name: 'Tema5',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál es una práctica necesaria en la ejecución de proyectos según el enfoque PRINCE2?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Definir únicamente los entregables iniciales del proyecto',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Gestionar por etapas el ciclo de vida del proyecto ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Asignar tareas de forma informal y flexible',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Ejecutar el proyecto sin necesidad de roles establecidos',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué aspecto fundamental se contempla en la asignación de recursos en metodologías ágiles?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Priorizar tareas administrativas sobre el trabajo del equipo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Asignar recursos según estructuras jerárquicas tradicionales',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Promover la autoorganización del equipo para la asignación de tareas ',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Distribuir los recursos financieros de forma fija al inicio del proyecto',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Cuál es un principio esencial del liderazgo en la gestión del cambio organizacional?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Dirigir el cambio sin consultar al equipo de trabajo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Comunicar los cambios al finalizar su implementación',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Minimizar la participación de los stakeholders internos',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Motivar al equipo para que se involucre activamente en el proceso ',
+                esCorrecta: true,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Qué elemento destaca el PMBOK para la gestión efectiva de recursos tecnológicos?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto:
+                  'Identificar, adquirir y gestionar los recursos necesarios para el proyecto ',
+                esCorrecta: true,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Establecer un cronograma basado únicamente en recursos humanos',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Utilizar únicamente herramientas tecnológicas básicas en los proyectos',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Depender exclusivamente del área de TI para decisiones tecnológicas',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿Cuál es una acción fundamental en la gestión de stakeholders durante la ejecución del proyecto?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Informar solo al cliente sobre el avance del proyecto',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Analizar las expectativas e influencias de los interesados ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto:
+                  'Evitar retroalimentación durante las etapas críticas del proyecto',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto:
+                  'Limitar la participación de los interesados en decisiones importantes',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -370,4 +567,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>
